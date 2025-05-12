@@ -1,0 +1,217 @@
+@import "index_style.css";
+
+body{
+    background-color: #173C4D;
+    overflow-x: hidden;
+}
+
+#navbar{
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#navbar .items{
+  display: flex;
+  align-items: center;
+}
+
+#navbar .main .popular{
+  padding-right: 15px;
+}
+
+#navbar .popular{
+  margin-right: 15px;
+}
+
+#navbar li.items img{
+  width: 25px;
+}
+
+#navbar .dropdown{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+#navbar .dropdown .items.logout{
+  display: none; 
+  position: fixed;
+  right: 2%;
+  margin-top: 2px;
+  color: #FED152;
+  background-color: white;
+  padding: 7px 15px 7px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+#navbar .dropdown:hover .logout{
+  display: block;
+}
+
+#navbar .dropdown .logout:hover{
+  text-decoration: underline;
+}
+
+.jumbotron .overlay2{
+  height: 450px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.jumbotron img{
+  object-position:center;
+  object-fit: cover;
+  height: 100%;
+}
+
+.jumbotron .overlay2 .desc{
+  position: absolute;
+}
+
+.jumbotron .overlay2 .desc{
+  top: 30%;
+}
+
+.jumbotron .desc .watch_btn2{
+  width: 150px;
+  padding: 5px 40px 5px 40px;
+  border-radius: 7px;
+  background-color: #FED152;
+  color: white;
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 12px;
+  transition-duration: 0.3s;
+}
+
+.jumbotron .desc .watch_btn2:hover{
+  background-color: #CB9601;
+  cursor: pointer;
+}
+
+.jumbotron .desc .watch_btn2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.jumbotron .desc .download_btn{
+    width: 150px;
+    padding: 5px 40px 5px 40px;
+    border-radius: 7px;
+    background-color: white;
+    color: #FED152;
+    font-weight: bold;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+    transition-duration: 0.3s;
+}
+
+.jumbotron .desc .download_btn:hover{
+    background-color: #CB9601;
+    cursor: pointer;
+    color: white;
+  }
+
+  .movies h3{
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+  }
+
+  .movies{
+    overflow: hidden;
+  }
+
+  .movies ul{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 93%;
+    margin-left: 35px;
+    padding-left: 0px;
+  }
+
+  .movies ul li{
+    list-style-type: none;
+    text-align: center;
+    transition-duration: 0.3s;
+  }
+
+  .movies .genre_group .tab{
+    margin: 10px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .movies .genre_group .tab:hover{ 
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+  .movies ul li.tab img{
+    height: 270px;
+    width: 190px;
+    object-fit: cover;
+    object-position: 50% 50%; 
+    border-radius: 10px;
+  }
+
+.movies .genre_group .dragging{
+    scroll-behavior: auto;
+    cursor: pointer;
+}
+
+.movies .genre_group .dragging .tab{
+    user-select: none;
+}
+
+.movies .genre_group li small{
+    color: white;
+    font-size: 16px;
+    width: 5px;
+}
+
+@media only screen and (max-width: 768px){
+  .jumbotron{
+    height: 300px;
+  }
+  
+  .jumbotron .overlay2{
+    align-items: center;
+    height: 100%;
+  }
+
+  .jumbotron .desc .watch_btn2{
+    font-size: 9px;
+    width: 120px;
+    padding: 5px 30px 5px 30px;
+  }
+
+  .jumbotron .desc .download_btn{
+    font-size: 9px;
+    width: 120px;
+    padding: 5px 30px 5px 30px;
+  }
+
+  .movies ul li.tab img{
+    height: 200px;
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .movies ul li.tab img{
+    height: 160px;
+    width: 80px;
+  }
+}

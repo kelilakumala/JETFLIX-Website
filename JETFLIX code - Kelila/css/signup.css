@@ -1,0 +1,215 @@
+@import "index_style.css";
+
+#signup{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+#signup .cover{
+  height: 700px;
+  width: 50%;
+  background-color: #FED152;
+  position: relative;
+}
+
+#signup .cover .watch_img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 14%;
+
+  display: flex;
+  align-items: center;
+}
+
+#signup .cover .watch_img img{
+  width: 70%;
+}
+
+#signup .forms{
+  width: 50%;
+  text-align: center;
+}
+
+#signup .forms h2{
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-top: 60px;
+}
+
+#signup .forms h1{
+  font-size: 30px;
+  margin-top: 0px;
+  color: #FED152;
+}
+
+#signup .forms form{
+  position: inherit;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#signup .forms form .name, .password, .confirm, .date_n_gender{
+  width: 100%;
+}
+
+#signup .forms form label{
+  font-weight: bold;
+}
+
+#signup .forms form input{
+  position: inherit;
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+#signup .forms form .space{
+  height: 5px;
+}
+
+#signup .forms form .date_gender{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+#signup .forms form .date{ 
+  font-weight: bold;
+}
+
+#signup .forms form .date input{
+  font-family:  'IBM Plex Sans KR';
+  width: 170px; 
+  padding: 0px 5px 0px 5px;
+}
+
+#signup .forms form .gender{
+  margin-left: 20px;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+
+#signup .forms form .gender .option{
+  display: flex;
+}
+
+#signup .forms form .gender input{
+  width: 20px;
+  vertical-align: middle;
+  margin: 0px;
+  margin-right: 7px;
+  accent-color: #FED152;
+}
+
+#signup .forms form .gender .gender_select{
+  font-weight: lighter;
+  padding-right: 10px;
+}
+
+#signup .forms form .tnc{
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+#signup .forms form .tnc input{
+  width: 16px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+#signup .forms form .tnc label{
+  font-weight: lighter;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+#signup .forms .signup_btn{
+  background-color: #FED152;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+  margin-top: 30px;
+  padding: 10px 60px 10px 60px;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+#signup .forms .signup_btn:hover{
+  background-color: #CB9601;
+  cursor: pointer;
+}
+
+#signup .forms form small{
+  color: red;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+#signup .forms small a{
+  color: #FED152;
+}
+
+@media only screen and (max-width: 768px){
+  #signup{
+    flex-direction: column;
+  }
+
+  #signup .cover{
+    width: 100%;
+    height: 300px;
+  }
+
+  #signup .cover .watch_img{
+    width: 60%;
+    left: 0;
+  }
+
+  #signup .cover .watch_img img{
+    margin-left: 50%;
+  }
+
+  #signup .forms{
+    width: 100%;
+    height: 690px;
+  }
+
+  #signup .forms form .date_gender .gender{
+    margin-left: 30px;
+  }
+
+  #signup .forms .signup_btn{
+    margin-top: 30px;
+  }
+
+  #signup small{
+    bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 880px) and (min-width: 769px){
+  #signup .cover{
+    height: 770px;
+  }
+
+  #signup .forms .date_gender{
+    flex-direction: column;
+  }
+
+  #signup .forms .date_gender .gender{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+@media only scren and (max-width: 490px){
+
+}

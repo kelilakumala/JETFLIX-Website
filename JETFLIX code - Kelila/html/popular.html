@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New and Popular</title>
+    <link rel="stylesheet" href="../css/popular.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/popular.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <ul id="navbar">
+        <li class="items"><a href="movies.html">JETFLIX</a></li>
+        <li class="items others"><a href="movies.html">Main</a></li>
+        <li class="items active"><a href="popular.html">Popular</a></li>
+        <div class="dropdown">
+            <li class="items"><img src="../assets/profile.jpg"></li>
+            <div class="items logout" onclick="logout()">Log Out</div>
+        </div>
+    </ul>
+
+    <div id="title">
+        <h3>Top 5 Movies</h3>
+    </div>
+
+    <div id="card">
+        <div class="left_side">
+            <h4>#1</h4>
+            <div class="gallery">
+                <img src="https://victoriasblogs456417119.files.wordpress.com/2018/11/cms-genre-2.jpg" onclick="slideshow(this)">
+                <img src="https://deadline.com/wp-content/uploads/2017/02/la-la-land1.jpg" onclick="slideshow(this)">
+                <img src="https://cdn.mos.cms.futurecdn.net/t5sCqycELjbWA6xeAXBS8i.jpg" onclick="slideshow(this)">
+                <img src="https://www.indiewire.com/wp-content/uploads/2016/12/la-la-land-emma-stone-and-ryan-gosling-december-2016-movie.jpg" onclick="slideshow(this)">
+            </div>
+        </div>
+        <div class="movie_card">
+            <div class="poster" id="poster"></div>
+            <div class="container">
+                <div class="main_feat">
+                    <div class="title">
+                        <h5>La La Land</h5>
+                    </div>
+                    <div class="buttons">
+                        <button class="watch_now">Watch Now</button>
+                        <button class="download_btn" onclick="download()">Download</button>
+                    </div>
+                </div>
+                <p>When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.</p>
+                <hr>
+                <p>Genre: Musical, Romance, Comedy</p>
+                <p>Cast: Emma Stone, Ryan Reynolds, John Legend</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="card">
+        <div class="left_side">
+            <h4>#2</h4>
+            <div class="gallery">
+                <img src="https://m.media-amazon.com/images/M/MV5BYTcwNzI0OGEtYmYyNi00MjM4LTlkMTEtMWZmMmQ4MTk4YTI0XkEyXkFqcGdeQXVyMzU0NTc0MDY@._V1_.jpg" onclick="slideshow2(this)">
+                <img src="https://www.refinery29.com/images/8422609.jpg?crop=40%3A21" onclick="slideshow2(this)">
+                <img src="https://content.api.news/v3/images/bin/b06ae8c8add35f92932bd5a1371ee34b" onclick="slideshow2(this)">
+                <img src="https://pyxis.nymag.com/v1/imgs/59e/3bc/3564ff52fb45976183eafb0a845c202bf7-16-friends-rachel-trifle.rsocial.w1200.jpg" onclick="slideshow2(this)">
+            </div>
+        </div>
+        <div class="movie_card">
+            <div class="poster2" id="poster2"></div>
+            <div class="container">
+                <div class="main_feat">
+                    <div class="title">
+                        <h5>Friends</h5>
+                    </div>
+                    <div class="buttons">
+                        <button class="watch_now"><a href="movie_detail.html">Watch Now</a></button>
+                        <button class="download_btn" onclick="download()">Download</button>
+                    </div>
+                </div>
+                <p>Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together; love, marriage, divorce, children, heartbreaks, fights, new jobs and job losses and all sorts of drama.</p>
+                <hr>
+                <p>Genre: Sitcoms, TV Comedy</p>
+                <p>Cast: Jennifer Anniston, Courtney Cox, Matthew Perry</p>
+            </div>
+        </div>
+    </div>  
+
+    <div id="card">
+        <div class="left_side">
+            <h4>#3</h4>
+            <div class="gallery">
+                <img src="https://1739752386.rsc.cdn77.org/data/images/full/241325/true-beauty-actor-cha-eun-woo-displays-undeniable-chemistry-with-co-stars-in-behind-the-scenes-footage-of-the-drama.jpeg" onclick="slideshow3(this)">
+                <img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2021/01/22/31bba10e-5c6a-11eb-a99a-beae699a1a1d_image_hires_163514.jpg?itok=vtDvvLqP&v=1611304524" onclick="slideshow3(this)">
+                <img src="https://image.kpopmap.com/2021/02/Hwang-InYeop-most-romantic-scenes-cover-SeoJun-Jugyeong-true-beauty.jpg" onclick="slideshow3(this)">
+                <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/02/05/soompi-true-beyutijpeg-20210205025200.jpeg" onclick="slideshow3(this)">
+            </div>
+        </div>
+        <div class="movie_card">
+            <div class="poster3" id="poster3"></div>
+            <div class="container">
+                <div class="main_feat">
+                    <div class="title">
+                        <h5>True Beauty</h5>
+                    </div>
+                    <div class="buttons">
+                        <button class="watch_now">Watch Now</button>
+                        <button class="download_btn" onclick="download()">Download</button>
+                    </div>
+                </div>
+                <p>After being bullied and discriminated because of her ugly looks, a high school girl transforms herself into a gorgeous "goddess" and quickly rises to fame after mastering the art of makeup via online tutorial videos.</p>
+                <hr>
+                <p>Genre: Romance, K-Drama</p>
+                <p>Cast: Moon Ga-young, Cha Eun-woo, Hwang In-Youp</p>
+            </div>
+        </div>
+    </div>  
+
+    <div id="card">
+        <div class="left_side">
+            <h4>#4</h4>
+            <div class="gallery">
+                <img src="https://akcdn.detik.net.id/visual/2022/03/22/bridgerton-2_169.jpeg?w=650" onclick="slideshow4(this)">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/220309103413-bridgerton-season-2-kate-anthony-edwina.jpg?c=3x2" onclick="slideshow4(this)">
+                <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQbadsD51EJqkouv-xlyLhAwy9O-iyR50SmpheUEF0Aqsr2W4X5kbgOBt81z55mv8YqXz1lN3wRH4Y3yVv0coJVSnw3AecBKpEV546c4gMK-RDvCucLlLmyXGJKXEkIUBaFzXZ4Hn8AqYQbdk3cRM0_NmNDQ.jpg?r=bed" onclick="slideshow4(this)">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F03%2F09%2FBRIDGERTON_205_Unit_01978R.jpg" onclick="slideshow4(this)">
+            </div>
+        </div>
+        <div class="movie_card">
+            <div class="poster4" id="poster4"></div>
+            <div class="container">
+                <div class="main_feat">
+                    <div class="title">
+                        <h5>Bridgerton</h5>
+                    </div>
+                    <div class="buttons">
+                        <button class="watch_now">Watch Now</button>
+                        <button class="download_btn" onclick="download()">Download</button>
+                    </div>
+                </div>
+                <p>Anthony Bridgerton navigates the intricate world of romance and societal expectations as he searches for a suitable wife. But when an enigmatic woman from his past resurfaces, it throws his plans into disarray, challenging his heart and family's reputation.</p>
+                <hr>
+                <p>Genre: Romance, Drama</p>
+                <p>Cast: Adjoa Andoh, Julie Andrews, Jonathan Bailey</p>
+            </div>
+        </div>
+    </div>  
+
+    <div id="card">
+        <div class="left_side">
+            <h4>#5</h4>
+            <div class="gallery">
+                <img src="https://helios-i.mashable.com/imagery/articles/076PnS1lgmf9SoH5VEX3sIQ/images-14.fill.size_2000x1333.v1632421505.jpg" onclick="slideshow5(this)">
+                <img src="https://www.giantfreakinrobot.com/wp-content/uploads/2022/12/ana-de-armas-daniel-craig-knives-out-900x450.jpg" onclick="slideshow5(this)">
+                <img src="https://cinemayward.com/wp-content/uploads/2019/12/Knives-Out-pic.jpg" onclick="slideshow5(this)">
+                <img src="https://www.mcall.com/wp-content/uploads/migration/2019/11/26/4LYKEY2NGVHXDJBEXF7Q73H7VA.jpg" onclick="slideshow5(this)">
+            </div>
+        </div>
+        <div class="movie_card">
+            <div class="poster5" id="poster5"></div>
+            <div class="container">
+                <div class="main_feat">
+                    <div class="title">
+                        <h5>Knives Out</h5>
+                    </div>
+                    <div class="buttons">
+                        <button class="watch_now">Watch Now</button>
+                        <button class="download_btn" onclick="download()">Download</button>
+                    </div>
+                </div>
+                <p>Harlan Thrombey, a reputable crime novelist, is found dead after his 85th birthday celebrations. However, as detective Benoit Blanc investigates the case, it unravels a ploy of sinister intentions.</p>
+                <hr>
+                <p>Genre: Crime, Drama</p>
+                <p>Cast: Daniel Craig, Chris Evans, Ana de Armas</p>
+            </div>
+        </div>
+    </div>  
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="left"><a href="index.html">JETFLIX</a></div>
+        <div class="right">
+            <div class="right1">
+                <div class="footer_title">Menu</div>
+                <div class="footer_content"><a href="index.html">Home</a></div>
+                <div class="footer_content"><a href="#">About Us</a></div>
+                <div class="footer_content"><a href="#">Contact Us</a></div>
+            </div>
+            <div class="right2">
+                <div class="footer_title">Social</div>
+                <div class="icons">
+                    <div class="fa fa-facebook"></div>
+                    <div class="fa fa-twitter"></div>
+                    <div class="fa fa-instagram"></div>
+                    <div class="fa fa-youtube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/movies.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <ul id="navbar">
+        <li class="items"><a href="index.html">JETFLIX</a></li>
+        <li class="items active"><a href="movies.html">Main</a></li>
+        <li class="items others"><a href="popular.html">Popular</a></li>
+        <div class="dropdown">
+            <li class="items"><img src="../assets/profile.jpg"></li>
+            <div class="items logout" onclick="logout()">Log Out</div>
+        </div>
+    </ul>
+
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="overlay2">
+            <div class="desc">
+                <h5>#2 in Popular Movies</h5>
+                <h2>Friends</h2>
+                <h6>2003 | 5 seasons | Sitcoms, TV Comedy</h6> 
+                <div class="buttons">
+                    <button class="watch_btn2"><a href="movie_detail.html">Watch Now</a></button>
+                    <button class="download_btn" onclick="download()">Download</button>
+                </div>
+            </div>
+            <img src="https://media.glamour.com/photos/582f6dec9430a13d478a3c19/master/w_2560%2Cc_limit/GettyImages-138363049.jpg">
+        </div>
+    </div>
+
+    <!-- movies -->
+    <div class="movies">
+        <h3>Action</h3>
+        <ul class="genre_group">
+            <li class="tab">
+                <img src="https://www.gamereactor.asia/media/58/fastxposter_3955893b.jpg">
+                <small>Fast X</small>
+            </li>
+            <li class="tab">
+                <img src="https://images.thedirect.com/media/photos/ghosted.jpg">
+                <small>Ghosted</small>
+            </li>
+            <li class="tab">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/mm2-20220325-21742-r4-6426f2a4a2094.jpg?crop=0.8891166922945498xw:1xh;center,top&resize=1200:*">
+                <small>Murder Mystery 2</small>
+            </li>
+            <li class="tab">
+                <img src="https://www.themoviedb.org/t/p/original/8IB2e4r4oVhHnANbnm7O3Tj6tF8.jpg">
+                <small>Inception</small>
+            </li>
+            <li class="tab">
+                <img src="https://cinemags.co.id/?attachment_id=188253">
+                <small>Bullet Train</small>
+            </li>
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTVjMmFiMDUtOWQ4My00YzhmLWE3MzEtODM1NDFjMWEwZTRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+                <small>
+                    Jumanji:
+                    <br>
+                    The Next Level
+                </small>
+            </li>
+            <li class="tab">
+                <img src="https://i.ebayimg.com/images/g/L0UAAOSwLjtiVwE5/s-l1600.jpg">
+                <small>Top Gun: Maverick</small>
+            </li>
+        </ul>
+
+        <h3>Comedies</h3>
+        <ul class="genre_group">
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg">
+                <small>Brooklyn Nine-Nine</small>
+            </li>
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/M/MV5BYjM2ZTgxZDAtNzQyMC00NWE4LTk5NzgtZGJlNjM4MzI1ZjI3XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_.jpg">
+                <small>The Hustle</small>
+            </li>
+            <li class="tab">
+                <img src="https://media-cache.cinematerial.com/p/500x/nlhck4vj/get-smart-movie-poster.jpg?v=1456269164">
+                <small>Get Smart</small>
+            </li>
+            <li class="tab">
+                <img src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/51ce6099e4b0d911b4489b79/55dc830ce4b05465d92ebb03/1557985654769/?format=1500w">
+                <small>Goosebumps</small>
+            </li>
+            <li class="tab">
+                <img src="https://www.themoviedb.org/t/p/original/oL0k5JA53PyoHSZqKb3cNkhwBCE.jpg">
+                <small>Click</small>
+            </li>
+            <li class="tab">
+                <img src="https://www.themoviedb.org/t/p/original/w5pzEAv3DRDYwUvqowcLBJkJASv.jpg">
+                <small>Baywatch</small>
+            </li>
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/M/MV5BYThkNWRmOTYtMjFiMy00ODA4LThlODgtNGVjYzQ4YjM0NDc5XkEyXkFqcGdeQXVyMTEyMDcwNw@@._V1_.jpg">
+                <small>Mean Girls</small>
+            </li>
+        </ul>
+
+        <h3>Romance</h3>
+        <ul class="genre_group">
+            <li class="tab">
+                <img src="https://www.layar.id/wp-content/uploads/2022/02/FLIPPED-POSTER.jpg">
+                <small>Flipped</small>
+            </li>
+            <li class="tab">
+                <img src="https://c4.wallpaperflare.com/wallpaper/343/413/221/movie-pride-and-prejudice-keira-knightley-wallpaper-preview.jpg">
+                <small>Pride and Prejudice</small>
+            </li>
+            <li class="tab">
+                <img src="https://media1.popsugar-assets.com/files/thumbor/cZ1R_plkYnzFbQkmgA1f__ASJrg/665x0:2665x2000/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2020/03/05/762/n/1922283/ed8dd55d5e61343413a294.34017730_/i/little-women-clip-about-laurie-jo-costumes-video.jpg">
+                <small>Little Women</small>
+            </li>
+            <li class="tab">
+                <img src="https://images.moviesanywhere.com/a8bd525375419f0ea88967770dbcdc39/1676c263-a71b-4ba2-88d1-50a7c1f070ff.jpg">
+                <small>Music and Lyrics</small>
+            </li>
+            <li class="tab">
+                <img src="https://w0.peakpx.com/wallpaper/1020/431/HD-wallpaper-five-feet-apart-cole-sprouse-drama-film-movie-romance.jpg">
+                <small>Five Feet Apart</small>
+            </li>
+            <li class="tab">
+                <img src="https://images.moviesanywhere.com/24b204384e43573f3d961c340d33108f/b90afbd0-c8d0-4fe4-9752-a51489480a05.jpg">
+                <small>Mamma Mia!</small>
+            </li>
+            <li class="tab">
+                <img src="https://www.themoviedb.org/t/p/original/fZfdq0zlERNBAWRVJgkQFWmo17H.jpg">
+                <small>The Holiday</small>
+            </li>
+        </ul>
+
+        <h3>Kids</h3>
+        <ul class="genre_group">
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_.jpg">
+                <small>Toy Story 4</small>
+            </li>
+            <li class="tab">
+                <img src="https://s4.bukalapak.com/img/44548456/large/Cinderella_Film_Movie_Poster_utk_Dekorasi_Rumah_apartemen_Cafehotel_213462.jpg.webp">
+                <small>Cinderella</small>
+            </li>
+            <li class="tab">
+                <img src="https://i.ebayimg.com/images/g/euQAAOSwpE1c5Vl2/s-l1600.jpg">
+                <small>Brave</small>
+            </li>
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/I/71dwV0dqhAL._AC_UF894,1000_QL80_.jpg">
+                <small>Monsters University</small>
+            </li>
+            <li class="tab">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_ratatouille_19736_0814231f.jpeg">
+                <small>Ratatouille</small>
+            </li>
+            <li class="tab">
+                <img src="https://i.ebayimg.com/images/g/A-QAAOSwx1VjJN58/s-l1600.jpg">
+                <small>Princess and the Frog</small>
+            </li>
+            <li class="tab">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_FMjpg_UX1000_.jpg">
+                <small>Tangled</small>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="left"><a href="index.html">JETFLIX</a></div>
+        <div class="right">
+            <div class="right1">
+                <div class="footer_title">Menu</div>
+                <div class="footer_content"><a href="index.html">Home</a></div>
+                <div class="footer_content"><a href="#">About Us</a></div>
+                <div class="footer_content"><a href="#">Contact Us</a></div>
+            </div>
+            <div class="right2">
+                <div class="footer_title">Social</div>
+                <div class="icons">
+                    <div class="fa fa-facebook"></div>
+                    <div class="fa fa-twitter"></div>
+                    <div class="fa fa-instagram"></div>
+                    <div class="fa fa-youtube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

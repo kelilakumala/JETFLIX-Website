@@ -1,0 +1,412 @@
+@import "index_style.css";
+@import "movies.css";
+
+body{
+  background-color: #173C4D;
+    
+}
+
+#navbar img{
+  width: 25px;
+  vertical-align: middle;
+}
+
+#title h3{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+#card{
+  display: flex;
+  justify-content:center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#card h4{
+  color: white;
+  font-size: 40px;
+  margin: 0px;
+}
+
+#card .left_side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+  align-items: flex-end;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+#card .left_side:first-child{
+  align-items: flex-start;
+}
+
+#card .left_side .gallery img{
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid white;
+  height: 110px;
+  object-fit: cover;
+  transition-duration: 0.2s;
+}
+
+#card .left_side .gallery img:hover{
+  border: 2px solid #FED152;
+  height: 130px;
+  width: 105%;
+}
+
+#card .left_side .gallery img:hover{
+  cursor: pointer;
+}
+
+#card .movie_card{
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+#card .movie_card .poster{
+  background-size: cover;
+  background-image: url("https://cdn.mos.cms.futurecdn.net/t5sCqycELjbWA6xeAXBS8i.jpg");
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background-position: center;
+}
+
+#card .movie_card .poster img{
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#card .movie_card{
+  background-color: white;
+  width: 50%;
+  border-radius: 20px;
+}
+
+#card .movie_card .container .main_feat{
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#card .movie_card .container .main_feat .title h5{
+  justify-self: flex-start;
+  color: #FED152;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#card .movie_card .container .main_feat .buttons{
+  display: flex;
+}
+
+#card .movie_card .container .main_feat .buttons .watch_now{
+  height: 30px;
+  background-color: #FED152;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  margin-right: 10px;
+}
+
+#card .movie_card .container .main_feat .buttons .watch_now a{
+  color: white;
+  text-decoration: none;
+}
+
+#card .movie_card .container .main_feat .buttons .watch_now:hover{
+  background-color: #CB9601;
+  cursor: pointer;
+}
+
+#card .movie_card .container .main_feat .buttons .download_btn{
+  height: 30px;
+  background-color: #D9D9D9;
+  color: #173C4D;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+#card .movie_card .container .main_feat .buttons .download_btn:hover{
+  background-color: #173C4D;
+  color: white;
+  cursor: pointer;
+}
+
+#card .movie_card .container p{
+  text-align: justify;
+  margin: 0px;
+  color: #173C4D;
+}
+
+#card .movie_card .container hr{
+  width: 30px;
+  height: 1px;
+  background: black;
+  margin-right: 100%;
+}
+
+#card .movie_card .poster2{
+  background-size: cover;
+  background-image: url("https://content.api.news/v3/images/bin/b06ae8c8add35f92932bd5a1371ee34b");
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-position: 0 20%;
+}
+
+#card .movie_card .poster3{
+  background-size: cover;
+  background-image: url("https://image.kpopmap.com/2021/02/Hwang-InYeop-most-romantic-scenes-cover-SeoJun-Jugyeong-true-beauty.jpg");
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-position: 0 20%;
+}
+
+#card .movie_card .poster4{
+  background-size: cover;
+  background-image: url("https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQbadsD51EJqkouv-xlyLhAwy9O-iyR50SmpheUEF0Aqsr2W4X5kbgOBt81z55mv8YqXz1lN3wRH4Y3yVv0coJVSnw3AecBKpEV546c4gMK-RDvCucLlLmyXGJKXEkIUBaFzXZ4Hn8AqYQbdk3cRM0_NmNDQ.jpg?r=bed");
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-position: 0 20%;
+}
+
+#card .movie_card .poster5{
+  background-size: cover;
+  background-image: url("https://cinemayward.com/wp-content/uploads/2019/12/Knives-Out-pic.jpg");
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-position: 0 20%;
+}
+
+@media only screen and (max-width: 1200px){
+  #card .movie_card .container .main_feat .buttons{
+    flex-direction: column;
+  }
+
+  #card .movie_card .container .main_feat .buttons .watch_now{
+    margin-right: 0px;
+    margin-bottom: 7px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .download_btn{
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #card .movie_card{
+    padding: 30px;
+  }
+  #card .movie_card .poster{
+    height: 180px;
+    border-radius: 15px;
+  }
+
+  #card .movie_card .poster2{
+    height: 180px;
+    border-radius: 15px;
+  }
+
+  #card .movie_card .poster3{
+    height: 180px;
+    border-radius: 15px;
+  }
+  
+  #card .movie_card .poster4{
+    height: 180px;
+    border-radius: 15px;
+  }
+
+  #card .movie_card .poster5{
+    height: 180px;
+    border-radius: 15px;
+  }
+
+  #card .movie_card .container .main_feat .title h5{
+    font-size: 30px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .watch_now{
+    font-size: 10px;
+    width: 120px;
+    height: 22px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .download_btn{
+    font-size: 10px;
+    width: 120px;
+    height: 22px;
+  }
+
+  #card .movie_card .container p{
+    font-size: 12px;
+  }
+
+  #card h4{
+    font-size: 30px;
+  }
+
+  #card .left_side .gallery img{
+    height: 70px;
+  }
+
+  #card .left_side .gallery img:hover{
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 660px){
+  #card .movie_card{
+    padding: 30px;
+  }
+
+  #card .movie_card .poster{
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  #card .movie_card .poster2{
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  #card .movie_card .poster3{
+    height: 120px;
+    border-radius: 10px;
+  }
+  
+  #card .movie_card .poster4{
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  #card .movie_card .poster5{
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  #card .movie_card .container .main_feat .title h5{
+    font-size: 23px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .watch_now{
+    font-size: 6px;
+    width: 80px;
+    height: 16px;
+    border-radius: 3px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .download_btn{
+    font-size: 6px;
+    width: 80px;
+    height: 16px;
+    border-radius: 3px;
+  }
+
+  #card .movie_card .container p{
+    font-size: 8px;
+  }
+
+  #card h4{
+    font-size: 25px;
+  }
+
+  #card .left_side .gallery img{
+    height: 50px;
+  }
+
+  #card .left_side .gallery img:hover{
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #card .movie_card{
+    padding: 20px;
+  }
+
+  #card .movie_card .poster{
+    height: 100px;
+  }
+
+  #card .movie_card .poster2{
+    height: 100px;
+  }
+
+  #card .movie_card .poster3{
+    height: 100px;
+  }
+  
+  #card .movie_card .poster4{
+    height: 100px;
+  }
+
+  #card .movie_card .poster5{
+    height: 100px;
+  }
+
+  #card .movie_card .container .main_feat{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #card .movie_card .container .main_feat .buttons{
+    flex-direction: row;
+  }
+
+  #card .movie_card .container .main_feat .buttons .watch_now{
+    margin-right: 10px;
+  }
+
+  #card .movie_card .container .main_feat .title h5{
+    font-size: 20px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .watch_now{
+    font-size: 6px;
+    width: 60px;
+    height: 14px;
+    border-radius: 2px;
+  }
+
+  #card .movie_card .container .main_feat .buttons .download_btn{
+    font-size: 6px;
+    width: 60px;
+    height: 14px;
+    border-radius: 2px;
+  }
+
+  #card .movie_card .container p{
+    font-size: 6px;
+  }
+
+  #card .left_side .gallery img{
+    height: 40px;
+  }
+
+  #card .left_side .gallery img:hover{
+    height: 60px;
+  }
+}

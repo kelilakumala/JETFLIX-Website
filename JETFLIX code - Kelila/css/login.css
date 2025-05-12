@@ -1,0 +1,134 @@
+@import "index_style.css";
+
+body{
+    background-image: linear-gradient(to bottom, #173C4D 30%,  #FED152);
+    background-position: 0 -105px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#forms{
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: 456px;
+}
+
+#forms h1{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 40px;
+}
+
+#forms input{
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+#forms label{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#forms #name_warning.name_color, #pass_warning.pass_color{
+    color: red;
+}
+
+#forms .btn{
+    text-align: center;
+}
+
+#forms .login_btn{
+    background-color: #173C4D;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 40px;
+    padding: 10px 60px 10px 60px;
+    transition-duration: 0.3s;
+}
+
+#forms .login_btn:hover{
+    color: #173C4D;
+    background-color: white;
+    cursor: pointer;
+}
+
+#forms .btn small a{
+    color: #173C4D;
+    margin-bottom: 300px;
+}
+
+@media only screen and (max-width: 768px){
+    #forms{
+        width: 300px;
+        height: 380px;
+    }
+
+    #forms h1{
+        font-size: 30px;
+    }
+
+    #forms input{
+        height: 10px;
+    }
+
+    #forms label{
+        font-size: 12px;
+    }
+
+    #forms .login_btn{
+        font-size: 10px;
+        padding: 7px 40px 7px 40px;
+        margin-top: 20px;
+    }
+
+    #forms .btn small{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    #forms{
+        width: 250px;
+    }
+
+    #forms h1{
+        font-size: 12px;
+    }
+
+    #forms input{
+        height: 4px;
+        border-radius: 3px;
+        line-height: 5px; 
+    }
+
+    #forms label{
+        font-size: 7px;
+    }
+
+    #forms .login_btn{
+        font-size: 10px;
+        padding: 7px 40px 7px 40px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    #forms .btn small{
+        font-size: 6px;
+    }
+
+    #forms #name_warning.name_color, #pass_warning.pass_color{
+        font-size: 7px;
+        margin: 0px;
+    }
+}

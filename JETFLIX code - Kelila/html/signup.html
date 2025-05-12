@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/signup.js"></script>
+</head>
+<body>
+     <!-- navbar -->
+    <ul id="navbar">
+        <li class="items"><a href="index.html">JETFLIX</a></li>
+        <li class="items active"><a href="signup.html">Sign Up</a></li>
+        <li class="items"><a href="login.html">Log In</a></li>
+    </ul>
+
+    <div id="signup">
+        <div class="cover">
+            <div class="watch_img">
+                <img src="../assets/signup_cover_pic.png">
+            </div>
+        </div>
+        <div class="forms">
+            <h2>Welcome to</h2>
+            <h1>JETFLIX</h1>
+            <form>
+                <!-- name -->
+                <div class="name">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" onchange="validateName()">
+                    <br>
+                    <small id="name_warning" class="name_small"></small>
+                    <br>
+                    <div class="space"></div>
+                </div>
+
+                <!-- password -->
+                <div class="password">
+                    <label for="pass">Password</label>
+                    <br>
+                    <input type="password" id="pass" name="pass" onchange="validatePass()">
+                    <br>
+                    <small id="pass_warning" class="pass_small"></small>
+                    <br>
+                    <div class="space"></div>
+                </div>
+
+                <!-- confirm password -->
+                <div class="confirm">
+                    <label for="conf_pass">Confirm Password</label>
+                    <br>
+                    <input type="password" id="conf_pass" name="conf_pass" onchange="validatePass()">
+                    <br>
+                    <small id="conf_pass_warning" class="conf_pass_small"></small>
+                    <br>
+                    <div class="space"></div>
+                </div>
+
+                <!-- date and gender -->
+                <div class="date_n_gender">
+                    <div class="date_gender">
+                        <div class="date">
+                            <label for="date">Date of Birth</label>
+                            <br>
+                            <input type="date" id="date" name="date" onchange="validateDate()">
+                            <br>
+                            <small id="date_warning" class="date_small"></small>
+                        </div>
+                        <div class="gender">
+                            <label>Gender</label>
+                            <br>
+                            <div class="option" onchange="validateGender()">
+                                <input name="gender" type="radio" id="male"><label for="male" class="gender_select">Male</label>
+                                <input name="gender" type="radio" id="female"><label for="female" class="gender_select">Female</label> 
+                            </div>
+                            <small id="gender_warning" class="gender_small"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+
+                <!-- terms n conditions -->
+                <div class="terms">
+                    <div class="tnc">
+                        <input type="checkbox" name="tnc" id="tnc" onchange="validateTnc()"><label for="tnc">I agree with the terms and conditions</label>
+                        <br> 
+                        <small id="tnc_warning"></small>
+                        <br>
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </form>
+
+            <button class="signup_btn" onclick="validateSignup()">Sign Up</button>
+            <br>
+            <small>Already have an account? <a href="login.html">Log In</a></small>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="left"><a href="index.html">JETFLIX</a></div>
+        <div class="right">
+            <div class="right1">
+                <div class="footer_title">Menu</div>
+                <div class="footer_content"><a href="index.html">Home</a></div>
+                <div class="footer_content"><a href="#">About Us</a></div>
+                <div class="footer_content"><a href="#">Contact Us</a></div>
+            </div>
+            <div class="right2">
+                <div class="footer_title">Social</div>
+                <div class="icons">
+                    <div class="fa fa-facebook"></div>
+                    <div class="fa fa-twitter"></div>
+                    <div class="fa fa-instagram"></div>
+                    <div class="fa fa-youtube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

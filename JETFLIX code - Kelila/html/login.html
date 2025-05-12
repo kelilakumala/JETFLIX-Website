@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <ul id="navbar">
+        <li class="items"><a href="index.html">JETFLIX</a></li>
+        <li class="items"><a href="signup.html">Sign Up</a></li>
+        <li class="items active"><a href="login.html">Log In</a></li>
+    </ul>
+
+    <div id="forms">
+        <h1>Welcome Back</h1>
+        <form>
+            <!-- name -->
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" name="name">
+            <small id="name_warning" class="name_color"></small>
+            <br>
+
+            <!-- password -->
+            <label for="pass">Password</label>
+            <br>
+            <input type="password" id="pass" name="pass" class="pass">
+            <small id="pass_warning" class="pass_color"></small>
+
+            <!-- button -->
+            <div class="btn">
+                <button class="login_btn" onclick="validateLogin(event)">Log In</button>
+                <br>
+                <small>Don't have an account yet? <a href="signup.html">Sign Up</a></small>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="left"><a href="index.html">JETFLIX</a></div>
+        <div class="right">
+            <div class="right1">
+                <div class="footer_title">Menu</div>
+                <div class="footer_content"><a href="index.html">Home</a></div>
+                <div class="footer_content"><a href="#">About Us</a></div>
+                <div class="footer_content"><a href="#">Contact Us</a></div>
+            </div>
+            <div class="right2">
+                <div class="footer_title">Social</div>
+                <div class="icons">
+                    <div class="fa fa-facebook"></div>
+                    <div class="fa fa-twitter"></div>
+                    <div class="fa fa-instagram"></div>
+                    <div class="fa fa-youtube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

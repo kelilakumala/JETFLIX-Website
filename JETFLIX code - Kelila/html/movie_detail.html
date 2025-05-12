@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <link rel="stylesheet" href="../css/movie_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/movie_detail.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <ul id="navbar">
+        <li class="items"><a href="movies.html">JETFLIX</a></li>
+        <li class="items active"><a href="movies.html">Main</a></li>
+        <li class="items others"><a href="popular.html">Popular</a></li>
+        <div class="dropdown">
+            <li class="items"><img src="../assets/profile.jpg"></li>
+            <div class="items logout" onclick="logout()">Log Out</div>
+        </div>
+    </ul>
+
+    <div id="header">
+        <div class="poster"></div>
+    </div> 
+    
+    <div id="content">
+        <div class="text">
+            <h2>Friends</h2>
+            <p>Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together; love, marriage, divorce, children, heartbreaks, fights, new jobs and job losses and all sorts of drama.</p>
+            <p class="seasons">5 seasons</p>
+            <div class="text_detail">
+                <div class="cast">
+                    <p class="title">Cast:</p>
+                    <p>Jennifer Anniston</p>
+                    <p>Courtney Cox</p>
+                    <p>Matthew Perry</p>
+                </div>
+                <div class="genre">
+                    <p class="title">Genre:</p>
+                    <p>Sitcoms</p>
+                    <p>TV Comedy</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="watch_now">Watch Now</button>
+            <br>
+            <button class="download_btn" onclick="download()">Download</button>
+        </div>
+    </div>
+
+    <div id="dropdown">
+        <select class="dropdown_btn">
+            <option>Season 1</option>
+            <option>Season 2</option>
+            <option>Season 3</option>
+            <option>Season 4</option>
+            <option>Season 5</option>
+        </select>
+    </div>
+
+    <div id="episodes">
+        <div class="ep">
+            <div class="cover">
+                <i class="fa fa-play-circle-o"></i>
+            </div>
+            <div class="desc">
+                <p class="title">1. The One Where Monica Gets a Roommate (Pilot)</p>
+                <p class="synopsis">Rachel runs from her wedding and meets the friends in the coffee place. Ross is depressed about his divorce but he still has a crush on Rachel.</p>
+                <p class="time">22m</p>
+            </div>
+        </div>
+
+        <div class="ep">
+            <div class="cover2">
+                <i class="fa fa-play-circle-o"></i>
+            </div>
+            <div class="desc">
+                <p class="title">2. The One with the Sonogram at the End</p>
+                <p class="synopsis">Ross’s lesbian ex-wife is pregnant with his child, and he doesn’t like her choice of a last name for the baby.</p>
+                <p class="time">22m</p>
+            </div>
+        </div>
+
+        <div class="ep">
+            <div class="cover3">
+                <i class="fa fa-play-circle-o"></i>
+            </div>
+            <div class="desc">
+                <p class="title">3. The One With the Thumb</p>
+                <p class="synopsis">A soda company gives Phoebe $7,000 after she finds a dismembered thumb in a can of soda.</p>
+                <p class="time">22m</p>
+            </div>
+        </div>
+
+        <div class="ep">
+            <div class="cover4">
+                <i class="fa fa-play-circle-o"></i>
+            </div>
+            <div class="desc">
+                <p class="title">4. The One with George Stephanopoulos</p>
+                <p class="synopsis">A deliveryman accidentally brings a pizza meant for George Stephanopoulos, who lives across the street from the girls.</p>
+                <p class="time">22m</p>
+            </div>
+        </div>
+
+        <div class="ep">
+            <div class="cover5">
+                <i class="fa fa-play-circle-o"></i>
+            </div>
+            <div class="desc">
+                <p class="title">5. The One with the East German Laundry Detergent</p>
+                <p class="synopsis">Ross helps Rachel do laundry and considers the evening a first date. Joey has Monica pose as his new girlfriend.</p>
+                <p class="time">22m</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="left"><a href="index.html">JETFLIX</a></div>
+        <div class="right">
+            <div class="right1">
+                <div class="footer_title">Menu</div>
+                <div class="footer_content"><a href="index.html">Home</a></div>
+                <div class="footer_content"><a href="#">About Us</a></div>
+                <div class="footer_content"><a href="#">Contact Us</a></div>
+            </div>
+            <div class="right2">
+                <div class="footer_title">Social</div>
+                <div class="icons">
+                    <div class="fa fa-facebook"></div>
+                    <div class="fa fa-twitter"></div>
+                    <div class="fa fa-instagram"></div>
+                    <div class="fa fa-youtube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,380 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'IBM Plex Sans KR';
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  display: none;
+} 
+
+#navbar{
+  margin: 0px;
+  background:#173C4D;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  padding: 10px;
+  align-items: center;
+}
+
+#navbar .items{
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+#navbar .items a{
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+#navbar .active a{
+  color: #FED152;
+  text-decoration: underline;
+}
+
+#navbar .items a:hover{
+  color: #FED152;
+  text-decoration: underline;
+}
+
+#navbar .items:first-child{
+  margin-right: auto;
+  margin-left: 0px;
+  color: #FED152;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#navbar .items:first-child a{
+  color: #FED152;
+}
+
+#navbar .items:first-child a:hover{
+  text-decoration: none;
+}
+
+.jumbotron{
+  margin: 0px;
+  padding: 0px;
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron .desc-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jumbotron .desc{
+  padding-left: 80px;
+}
+
+.desc h2{
+  color: white;
+  font-size: 70px;
+  margin: 0px;
+  line-height: 70px;
+}
+
+.desc h5{
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.desc h6{
+  color: white;
+  bottom: 180px;
+  font-size: 17px;
+  margin: 0px;
+}
+
+.desc .watch_btn{
+  width: 340px;
+  padding: 7px 100px 7px 100px;
+  border-radius: 7px;
+  background-color: #FED152;
+  color: white;
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0);
+  top: 20%;
+  font-size: 15px;
+  margin-top: 30px;
+  transition-duration: 0.3s;
+}
+
+.desc .watch_btn:hover{
+  background-color: #CB9601;
+  cursor: pointer;
+}
+
+.desc .watch_btn a{
+  color: white;
+  text-decoration: none;
+}
+
+#kids_section{
+  position: relative;
+  background-color: #173C4D;
+  height: 500px;
+  margin: 0px;
+  padding: 40px;
+}
+
+#kids_section .kids_image{
+  position: absolute;
+  height: 70%;
+  width: 80%;
+  left: 10%;
+  top: 15%;
+
+  display: flex;
+  align-items: center;
+}
+
+#kids_section .kids_image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+}
+
+#kids_section .kids_text{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#kids_section .kids_text h3{
+  width: 360px;
+  margin: 0;
+}
+
+#kids_section button{
+  width: 280px;
+  padding: 7px 50px 7px 50px;
+  border-radius: 7px;
+  background-color: #FED152;
+  color: white;
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  transition-duration: 0.3s;
+}
+
+#kids_section button:hover{
+  background-color: #CB9601;
+  cursor: pointer;
+}
+
+#kids_section button a{
+  color: white;
+  text-decoration: none;
+}
+
+#footer{
+  background-color: #173C4D;
+  height: 150px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer a{
+  color: white;
+  text-decoration: none;
+}
+
+#footer .left a{
+  color: #FED152;
+}
+
+#footer .left{
+  color: #FED152;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+#footer .right{
+  display: flex;
+}
+
+#footer .right2 .icons{
+  display: flex;
+}
+
+#footer .footer_title{
+  font-weight: bold;
+}
+
+#footer .fa{
+  padding: 7px;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+#footer .right1 .footer_content{
+  text-decoration: underline;
+  width: 100px;
+}
+
+#footer .fa-facebook{
+  background-color: #1877F2;
+  padding: 7px 10px 6px 10px;
+}
+
+#footer .fa-twitter{
+  background-color: #1D9BF0;
+  padding-bottom: 6px;
+  padding-right: 6px;
+}
+
+#footer .fa-instagram{
+  background-color: #C82787;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+#footer .fa-youtube{
+  background-color: #b2071d ;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .jumbotron .desc-container{
+    justify-content: space-around;
+  }
+
+  .jumbotron .desc{
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .jumbotron img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .jumbotron .desc h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 0px;
+  }
+
+  .jumbotron .desc h5{
+    font-size: 12px;
+  }
+
+  .jumbotron .desc h6{
+    font-size: 10px;
+  }
+
+  .jumbotron .desc .watch_btn{
+    width: 200px;
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+    margin-top: 20px;
+  } 
+
+  #kids_section .kids_text h3{
+    font-size: 25px;
+    width: 220px;
+  }
+
+  #kids_section button{
+    width: 180px;
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 490px){
+  #kids_section{
+    height: 260px;
+  }
+
+  #kids_section .kids_text h3{
+    font-size: 20px;
+  }
+
+  #kids_section button{
+    width: 150px;
+    padding: 4px 40px 4px 40px;
+    font-size: 10px;
+  }
+
+  #footer{
+    height: 100px;
+  }
+  
+  #footer .left{
+    font-size: 12px;
+  }
+
+  #footer .right{
+    font-size: 7px;
+  }
+
+  #footer .right1 .footer_content{
+    width: 50px;
+  }
+
+  #footer .fa{
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  #footer .fa-facebook{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #footer .fa-twitter{
+    padding-left: 6px;
+  }
+
+  #footer .fa-instagram{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  #footer .fa-youtube{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}

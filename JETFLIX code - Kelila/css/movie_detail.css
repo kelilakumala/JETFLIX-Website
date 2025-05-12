@@ -1,0 +1,483 @@
+@import "index_style.css";
+@import "movies.css";
+
+body{
+    background-color: #173C4D;
+}
+
+#navbar img{
+  width: 25px;
+  vertical-align: middle;
+}
+
+#header{
+  margin-top: 20px;
+}
+
+#header .poster{
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2014-12/30/13/enhanced/webdr08/enhanced-buzz-wide-25546-1419964675-8.jpg");
+  background-position: 0px -90px;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  height: 490px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+#content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+#content .text{
+  width: 40%;
+}
+
+#content .text h2{
+  color: #FED152;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  line-height: 80px;
+}
+
+#content .text{
+  color: white;
+  font-size: 18px;
+  margin-top: 0px;
+  padding-left: 5px;
+  text-align: justify;
+}
+
+#content .text .seasons{
+  color: #FED152;
+  font-weight: bold;  
+  line-height: 10px;
+}
+
+#content .text .text_detail{
+  display: flex;
+  line-height: 10px;
+}
+
+#content .text .text_detail .cast{
+  margin-right: 60px;
+  padding: 0px;
+}
+
+#content .text .text_detail .title{
+  font-weight: bold;
+}
+
+#content .buttons{
+  margin-top: 1%;
+}
+
+#content .buttons .watch_now{
+  background-color: #FED152;
+  color: white;
+  width: 250px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5px;
+  transition-duration: 0.3s;
+}
+
+#content .buttons .watch_now:hover{
+  background-color: #CB9601;
+  cursor: pointer;
+}
+
+#content .buttons .download_btn{
+  background-color: white;
+  color: #FED152;
+  width: 250px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5px;
+  transition-duration: 0.3s;
+}
+
+#content .buttons .download_btn:hover{
+  background-color: #CB9601;
+  color: white;
+  cursor: pointer;
+}
+
+#dropdown{
+  margin-top: 40px;
+}
+
+#dropdown .dropdown_btn{
+  background-color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10%;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 20px;
+}
+
+#episodes{
+  margin-left: 10%;
+}
+
+#episodes .ep{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+}
+
+#episodes .ep .cover{
+  background-image: url("https://m.media-amazon.com/images/M/MV5BNjMxODVkZTgtNTMyOS00ZTQ2LTkxYzgtM2VmNDg3NWE2YTYyXkEyXkFqcGdeQXVyMjA3OTMwODg@._V1_.jpg");
+  height: 200px;
+  width: 330px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#episodes .ep i{
+  font-size: 70px;
+  color: white;
+  font-weight: lighter;
+  margin-left: 40%;
+  margin-top: 20%;
+}
+
+#episodes .ep .desc{
+  width: 600px;
+}
+
+#episodes .ep .desc .title{
+  font-size: 18px;
+  color: #FED152;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#episodes .ep .desc .synopsis{
+  color: white;
+  font-size: 18px;
+}
+
+#episodes .ep .desc .time{
+  color: white;
+}
+
+#episodes .ep .cover2{
+  background-image: url("https://m.media-amazon.com/images/M/MV5BMzE1MTlkOTgtMzNkOC00MzM2LWI1MDUtNzgzM2QxYmMyZjQ2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDAxOTExNTM@._V1_.jpg");
+  height: 200px;
+  width: 330px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#episodes .ep .cover3{
+  background-image: url("https://preview.redd.it/rqhkq29plov51.jpg?auto=webp&s=1b3b9617039ee18b2fafce6fe61ac2c803a5e86e");
+  height: 200px;
+  width: 330px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#episodes .ep .cover4{
+  background-image: url("https://m.media-amazon.com/images/M/MV5BYjc2MTQwZmQtMTg4OS00ZDBkLWE4ZWUtMTMwMjBkMjFiZTViXkEyXkFqcGdeQXVyOTE2MzcwMDQ@._V1_.jpg");
+  height: 200px;
+  width: 330px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#episodes .ep .cover5{
+  background-image: url("https://m.media-amazon.com/images/M/MV5BYzBlMTViYWUtYTk0MS00Y2JhLTkxODUtMzk4M2NiYjg2MjI2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDAxOTExNTM@._V1_.jpg");
+  height: 200px;
+  width: 330px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 980px){
+  #header{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #header .poster{
+    height: 350px;
+  } 
+
+  #dropdown .dropdown_btn option{
+    font-size: 8px;
+  }
+
+  #episodes .ep .cover{
+    height: 150px;
+    width: 280px;
+  }
+
+  #episodes .ep .cover2{
+    height: 150px;
+    width: 280px;
+  }
+
+  #episodes .ep .cover3{
+    height: 150px;
+    width: 280px;
+  }
+
+  #episodes .ep .cover4{
+    height: 150px;
+    width: 280px;
+  }
+
+  #episodes .ep .cover5{
+    height: 150px;
+    width: 280px;
+  }
+
+  #episodes .ep i{
+    font-size: 50px;
+    margin-left: 43%;
+  }
+
+  #episodes .ep .desc{
+    width: 400px;
+  }
+
+  #episodes .ep .desc .title{
+    font-size: 16px;
+  }
+
+  #episodes .ep .desc .synopsis{
+    font-size: 12px;
+  }
+
+  #episodes .ep .desc .time{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  #header .poster{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+  }
+  
+  #content .text h2{
+    font-size: 70px;
+  }
+  
+  #content .text p{
+    font-size: 12px;
+  }
+
+  #content .text .cast p{
+    line-height: 12px;
+  }
+
+  #content .buttons .watch_now{
+    font-size: 12px;
+    width: 130px;
+  }
+
+  #content .buttons .download_btn{
+    font-size: 12px;
+    width: 130px;
+  }
+
+  #dropdown .dropdown_btn{
+    width: 150px;
+    margin-left: 12%;
+    font-size: 12px;
+  }
+
+  #episodes .ep .cover{
+    height: 100px;
+    width: 230px;
+  }
+
+  #episodes .ep .cover2{
+    height: 100px;
+    width: 230px;
+  }
+
+  #episodes .ep .cover3{
+    height: 100px;
+    width: 230px;
+  }
+
+  #episodes .ep .cover4{
+    height: 100px;
+    width: 230px;
+  }
+
+  #episodes .ep .cover5{
+    height: 100px;
+    width: 230px;
+  }
+
+  #episodes .ep i{
+    font-size: 30px;
+    margin-left: 45%;
+  }
+
+  #episodes .ep .desc{
+    width: 300px;
+  }
+
+  #episodes .ep .desc .title{
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  #episodes .ep .desc .synopsis{
+    font-size: 8px;
+  }
+
+  #episodes .ep .desc .time{
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #content{
+    margin-top: 10px;
+    align-items: top;
+  }
+
+  #content .text h2{
+    font-size: 40px;
+    line-height: 45px;
+  }
+  
+  #content .text p{
+    font-size: 12px;
+  }
+
+  #content .text .cast p{
+    line-height: 12px;
+  }
+
+  #content .buttons .watch_now{
+    font-size: 12px;
+    width: 130px;
+  }
+
+  #content .buttons .download_btn{
+    font-size: 12px;
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #content .text h2{
+    font-size: 30px;
+  }
+  
+  #content .text p{
+    font-size: 8px;
+  }
+
+  #content .seasons{
+    line-height: 8px;
+    margin-bottom: 0;
+  }
+
+  #content .text .cast p{
+    line-height: 8px;
+  }
+
+  #content .buttons .watch_now{
+    font-size: 8px;
+    width: 90px;
+    padding: 5px;
+    border-radius:4px;
+  }
+
+  #content .buttons .download_btn{
+    font-size: 8px;
+    width: 90px;
+    padding: 5px;
+    border-radius:4px;
+  }
+
+  #dropdown .dropdown_btn{
+    width: 100px;
+    height: 20px;
+    padding: 0px;
+    font-size: 8px;
+    margin-left: 10%;
+    border-radius: 5px;
+  }
+
+  #episodes .ep .cover{
+    height: 80px;
+    width: 210px;
+  }
+
+  #episodes .ep .cover2{
+    height: 80px;
+    width: 210px;
+  }
+
+  #episodes .ep .cover3{
+    height: 80px;
+    width: 210px;
+  }
+
+  #episodes .ep .cover4{
+    height: 80px;
+    width: 210px;
+  }
+
+  #episodes .ep .cover5{
+    height: 80px;
+    width: 210px;
+  }
+
+  #episodes .ep i{
+    font-size: 18px;
+    margin-left: 45%;
+    margin-top: 22%;
+  }
+
+  #episodes .ep .desc{
+    width: 200px;
+  }
+
+  #episodes .ep .desc .title{
+    font-size: 8px;
+    margin-top: 0px;
+  }
+
+  #episodes .ep .desc .synopsis{
+    font-size: 6px;
+  }
+
+  #episodes .ep .desc .time{
+    font-size: 4px;
+  }
+}
