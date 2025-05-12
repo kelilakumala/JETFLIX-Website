@@ -5,6 +5,6 @@ This project focuses on sharpening web design skills as well as creativity and a
 
 This website consists of 6 pages that have all been designed on Figma as the prototype. The _JETFLIX Documentation - Kelila.docx_ file explains the features and how-to of the website.
 
-_This website was created for a Human-Computer Interaction university course and is not intended for public hosting or official launch. Any resemblance to existing work is purely coincidental and not intended as plagiarism._
+_This website was created for a BINUS University's Human-Computer Interaction course and is not intended for public hosting or official launch. Any resemblance to existing work is purely coincidental and not intended as plagiarism._
 
 Figma Link: https://www.figma.com/design/bSpN6MkNAa4fjvQyuzIC1v/JETFLIX---Kelila?node-id=0-1&t=KWe9t7qU1c5Z4eV4-1
